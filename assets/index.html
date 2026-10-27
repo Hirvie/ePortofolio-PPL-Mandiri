@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portofolio Praktik Pengalaman Lapangan Mandiri - PPG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sidebar Menu -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="sidebar-brand">
+                <span class="brand-title">E-Portofolio</span>
+                <span class="brand-subtitle">PPL Mandiri</span>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#beranda" class="sidebar-link active" data-section="beranda">
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
+            </a>
+            <a href="#profil" class="sidebar-link" data-section="profil">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </a>
+            <a href="#praktik-terbimbing" class="sidebar-link" data-section="praktik-terbimbing">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Praktik Terbimbing</span>
+            </a>
+            <a href="#uts" class="sidebar-link" data-section="uts">
+                <i class="fas fa-file-alt"></i>
+                <span>Ujian Tengah Semester</span>
+            </a>
+            <a href="#uas" class="sidebar-link" data-section="uas">
+                <i class="fas fa-file-contract"></i>
+                <span>Ujian Akhir Semester</span>
+            </a>
+            <a href="#rtl" class="sidebar-link" data-section="rtl">
+                <i class="fas fa-tasks"></i>
+                <span>Rencana Tindak Lanjut</span>
+            </a>
+            <a href="#dokumentasi" class="sidebar-link" data-section="dokumentasi">
+                <i class="fas fa-images"></i>
+                <span>Dokumentasi</span>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <p>Florentiano Hirvi Rasanto, S.Tr.Par</p>
+        </div>
+    </aside>
+
+    <!-- Mobile Sidebar Toggle -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <main>
+            <!-- Beranda -->
+            <section id="beranda" class="section active">
+                <div class="hero">
+                    <div class="hero-background">
+                        <div class="floating-shape shape-1"></div>
+                        <div class="floating-shape shape-2"></div>
+                        <div class="floating-shape shape-3"></div>
+                    </div>
+                    <div class="hero-content">
+                        <div class="hero-photo-frame">
+                            <img src="assets/img/beranda-foto.jpg" alt="Foto Florentiano Hirvi Rasanto" class="hero-photo">
+                        </div>
+                        <h1 class="hero-title">E-Portofolio Praktik Pengalaman Lapangan Mandiri</h1>
+                        <p class="hero-subtitle">Pendidikan Profesi Guru</p>
+                        <div class="hero-motto">
+                            <div class="motto-card">
+                                <i class="fas fa-quote-left"></i>
+                                <p class="motto-text">"Belajar, Berinovasi, dan Menginspirasi untuk Menciptakan Pembelajaran yang Bermakna"</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                        </div>
+                        <div class="hero-vision">
+                            <h2 class="vision-title"><i class="fas fa-eye"></i> Visi</h2>
+                            <p class="vision-text">Menjadi guru profesional yang berkarakter, inovatif, kreatif, dan mampu menciptakan pembelajaran yang menyenangkan, bermakna, serta berorientasi pada perkembangan peserta didik.</p>
+                        </div>
+                        <div class="scroll-indicator">
+                            <span>Scroll untuk melihat lebih lanjut</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Profil -->
+            <section id="profil" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title"><i class="fas fa-id-card"></i> Profil Mahasiswa PPL</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="profile-grid">
+                        <div class="profile-photo-section">
+                            <div class="profile-photo-wrapper">
+                                <img src="assets/img/profil-foto.jpg" alt="Foto Profil Florentiano Hirvi Rasanto" class="profile-photo">
+                                <div class="profile-photo-ring"></div>
+                            </div>
+                        </div>
+                        <div class="profile-info-section">
+                            <div class="profile-card">
+                                <div class="profile-item">
+                                    <div class="profile-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="profile-detail">
+                                        <span class="profile-label">Nama Lengkap</span>
+                                        <span class="profile-value">Florentiano Hirvi Rasanto, S.Tr.Par</span>
+                                    </div>
+                                </div>
+                                <div class="profile-item">
+                                    <div class="profile-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div class="profile-detail">
+                                        <span class="profile-label">Nomor Handphone / WhatsApp</span>
+                                        <a href="#" class="profile-link" id="waLink">Klik untuk menghubungi via WhatsApp</a>
+                                    </div>
+                                </div>
+                                <div class="profile-item">
+                                    <div class="profile-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="profile-detail">
+                                        <span class="profile-label">Alamat</span>
+                                        <a href="#" class="profile-link" id="alamatLink">Lihat Lokasi Alamat</a>
+                                    </div>
+                                </div>
+                                <div class="profile-item">
+                                    <div class="profile-icon">
+                                        <i class="fas fa-university"></i>
+                                    </div>
+                                    <div class="profile-detail">
+                                        <span class="profile-label">LPTK</span>
+                                        <span class="profile-value">[Nama LPTK]</span>
+                                    </div>
+                                </div>
+                                <div class="profile-item">
+                                    <div class="profile-icon">
+                                        <i class="fas fa-school"></i>
+                                    </div>
+                                    <div class="profile-detail">
+                                        <span class="profile-label">Lokasi PPL</span>
+                                        <span class="profile-value">[Nama Sekolah Tempat PPL]</span>
+                                    </div>
+                                </div>
+                                <div class="profile-item">
+                                    <div class="profile-icon">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                    </div>
+                                    <div class="profile-detail">
+                                        <span class="profile-label">Nama Dosen Pembimbing Lapangan</span>
+                                        <span class="profile-value">Dr. Hamidah Suryani, S.Pd., M.Pd</span>
+                                    </div>
+                                </div>
+                                <div class="profile-item">
+                                    <div class="profile-icon">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <div class="profile-detail">
+                                        <span class="profile-label">Nama Guru Pamong</span>
+                                        <span class="profile-value">Prita Bebasari, S.Pd</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Praktik Terbimbing -->
+            <section id="praktik-terbimbing" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title"><i class="fas fa-chalkboard-teacher"></i> Praktik Terbimbing - Refleksi Mata Kuliah</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Analisis dan Refleksi Pelaksanaan Praktik Mengajar Mandiri</p>
+                    </div>
+                    <div class="grid-cards">
+                        <article class="card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <h3 class="card-title">a. Analisis Produk Rancangan/Perencanaan Pembelajaran</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Analisis produk rancangan/perencanaan pembelajaran untuk praktik mengajar mandiri</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('praktik-terbimbing/analisis-rpp.pdf', 'Analisis Produk RPP')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('praktik-terbimbing/analisis-rpp.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <h3 class="card-title">b. Analisis Materi Pembelajaran</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Analisis materi pembelajaran yang sudah disusun dan diterapkan praktik mengajar mandiri</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('praktik-terbimbing/analisis-materi.pdf', 'Analisis Materi Pembelajaran')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('praktik-terbimbing/analisis-materi.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-photo-video"></i>
+                                </div>
+                                <h3 class="card-title">c. Analisis Media Pembelajaran</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Analisis media pembelajaran yang dipergunakan dalam praktik mengajar mandiri</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('praktik-terbimbing/analisis-media.pdf', 'Analisis Media Pembelajaran')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('praktik-terbimbing/analisis-media.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h3 class="card-title">d. Analisis Video Pelaksanaan Praktik Mengajar</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Analisis video pelaksanaan praktik mengajar mandiri</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('praktik-terbimbing/analisis-video.pdf', 'Analisis Video Pelaksanaan')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('praktik-terbimbing/analisis-video.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <h3 class="card-title">e. Analisis Kegiatan Nonmengajar</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Analisis kegiatan nonmengajar yang dilaksanakan</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('praktik-terbimbing/analisis-nonmengajar.pdf', 'Analisis Kegiatan Nonmengajar')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('praktik-terbimbing/analisis-nonmengajar.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <h3 class="card-title">f. Instrumen Penilaian dan Analisisnya</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Instrumen penilaian yang dirancang berserta analisisnya</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('praktik-terbimbing/instrumen-penilaian.pdf', 'Instrumen Penilaian dan Analisis')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('praktik-terbimbing/instrumen-penilaian.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- UTS -->
+            <section id="uts" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title"><i class="fas fa-file-alt"></i> Ujian Tengah Semester</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Produk Terbaik Praktik Mengajar Mandiri Siklus 1</p>
+                    </div>
+                    <div class="grid-cards two-columns">
+                        <article class="card featured">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-file-word"></i>
+                                </div>
+                                <h3 class="card-title">a. Produk Rancangan/Perencanaan Pembelajaran Lengkap Terbaik</h3>
+                                <span class="badge">Siklus 1</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Rancangan/Perencanaan Pembelajaran lengkap yang terbaik dari praktik mengajar mandiri siklus 1</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('uts/rpp-terbaik-siklus1.pdf', 'RPP Terbaik Siklus 1')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('uts/rpp-terbaik-siklus1.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card featured">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <h3 class="card-title">b. Produk Video Pelaksanaan Praktik Mengajar</h3>
+                                <span class="badge">Siklus 1</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Video pelaksanaan praktik mengajar mandiri dari rancangan/perencanaan pembelajaran yang dipilih</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openVideoViewer('uts/video-praktik-siklus1.mp4', 'Video Praktik Mengajar Siklus 1')">
+                                        <i class="fas fa-play"></i> Putar Video
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('uts/video-praktik-siklus1.mp4')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- UAS -->
+            <section id="uas" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title"><i class="fas fa-file-contract"></i> Ujian Akhir Semester</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Produk Terbaik Praktik Mengajar Mandiri Siklus 2 s.d. 4</p>
+                    </div>
+                    <div class="grid-cards two-columns">
+                        <article class="card featured">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-file-word"></i>
+                                </div>
+                                <h3 class="card-title">a. Produk Rancangan/Perencanaan Pembelajaran Lengkap Terbaik</h3>
+                                <span class="badge">Siklus 2 - 4</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Rancangan/Perencanaan Pembelajaran lengkap yang terbaik dari praktik mengajar mandiri siklus 2 s.d. 4</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('uas/rpp-terbaik-siklus2-4.pdf', 'RPP Terbaik Siklus 2 - 4')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('uas/rpp-terbaik-siklus2-4.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card featured">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <h3 class="card-title">b. Produk Video Pelaksanaan Praktik Mengajar</h3>
+                                <span class="badge">Siklus 2 - 4</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Video pelaksanaan praktik mengajar mandiri dari rancangan/perencanaan pembelajaran yang dipilih</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openVideoViewer('uas/video-praktik-siklus2-4.mp4', 'Video Praktik Mengajar Siklus 2 - 4')">
+                                        <i class="fas fa-play"></i> Putar Video
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('uas/video-praktik-siklus2-4.mp4')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RTL -->
+            <section id="rtl" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title"><i class="fas fa-tasks"></i> Rencana Tindak Lanjut</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="single-card">
+                        <article class="card large">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 class="card-title">Rencana Tindak Lanjut Setelah Pelaksanaan PPL</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-description">Dokumen rencana tindak lanjut berdasarkan hasil refleksi dan evaluasi pelaksanaan Praktik Pengalaman Lapangan Mandiri</p>
+                                <div class="file-actions">
+                                    <button class="btn-file" onclick="openFileViewer('rtl/rencana-tindak-lanjut.pdf', 'Rencana Tindak Lanjut')">
+                                        <i class="fas fa-eye"></i> Lihat File
+                                    </button>
+                                    <button class="btn-file" onclick="downloadFile('rtl/rencana-tindak-lanjut.pdf')">
+                                        <i class="fas fa-download"></i> Unduh
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dokumentasi -->
+            <section id="dokumentasi" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title"><i class="fas fa-images"></i> Dokumentasi Kegiatan PPL</h2>
+                        <div class="section-divider"></div>
+                        <p class="section-subtitle">Dokumentasi pelaksanaan Praktik Pengalaman Lapangan Mandiri</p>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item" onclick="openImageViewer('assets/img/dokumentasi-1.jpg', 'Dokumentasi Kegiatan 1')">
+                            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=800&auto=format&fit=crop" alt="Dokumentasi 1" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop'">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <span>Dokumentasi 1</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openImageViewer('assets/img/dokumentasi-2.jpg', 'Dokumentasi Kegiatan 2')">
+                            <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=800&auto=format&fit=crop" alt="Dokumentasi 2" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800&auto=format&fit=crop'">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <span>Dokumentasi 2</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openImageViewer('assets/img/dokumentasi-3.jpg', 'Dokumentasi Kegiatan 3')">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop" alt="Dokumentasi 3" onerror="this.src='https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800&auto=format&fit=crop'">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <span>Dokumentasi 3</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openImageViewer('assets/img/dokumentasi-4.jpg', 'Dokumentasi Kegiatan 4')">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" alt="Dokumentasi 4" onerror="this.src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop'">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <span>Dokumentasi 4</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openImageViewer('assets/img/dokumentasi-5.jpg', 'Dokumentasi Kegiatan 5')">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop" alt="Dokumentasi 5" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop'">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <span>Dokumentasi 5</span>
+                            </div>
+                        </div>
+                        <div class="gallery-item" onclick="openImageViewer('assets/img/dokumentasi-6.jpg', 'Dokumentasi Kegiatan 6')">
+                            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=800&auto=format&fit=crop" alt="Dokumentasi 6" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop'">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                                <span>Dokumentasi 6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="documentation-info">
+                        <div class="info-card">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Silakan tambahkan foto dokumentasi kegiatan PPL Anda ke folder <strong>assets/img/</strong> dengan nama file <strong>dokumentasi-1.jpg</strong> hingga <strong>dokumentasi-6.jpg</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 E-Portofolio Praktik Pengalaman Lapangan Mandiri - Florentiano Hirvi Rasanto, S.Tr.Par</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- File Viewer Modal -->
+    <div id="fileModal" class="modal">
+        <div class="modal-backdrop" onclick="closeFileViewer()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="fileModalTitle"></h3>
+                <button class="modal-close" onclick="closeFileViewer()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe id="fileFrame" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Viewer Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-backdrop" onclick="closeVideoViewer()"></div>
+        <div class="modal-content video-modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="videoModalTitle"></h3>
+                <button class="modal-close" onclick="closeVideoViewer()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <video id="videoPlayer" controls>
+                    <source src="" type="video/mp4">
+                    Browser Anda tidak mendukung pemutaran video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Viewer Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-backdrop" onclick="closeImageViewer()"></div>
+        <div class="modal-content image-modal">
+            <div class="modal-header">
+                <h3 class="modal-title" id="imageModalTitle"></h3>
+                <button class="modal-close" onclick="closeImageViewer()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="imageViewer" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
